@@ -281,7 +281,7 @@
             <mdb-col md="9">
               <p class="font-weight-bold CocolorDark-text">10/04/2019</p>
               <div class="d-flex justify-content-between">
-                <mdb-col col="11" class="text-truncate pl-0 mb-3">
+                <mdb-col col="11" class=" pl-0 mb-3">
                   <p class="dark-grey-text">Well would you look at that, I think we found one of those trolls. Happy Halloween!</p>
                 </mdb-col>
                 <a>
@@ -304,7 +304,7 @@
             <mdb-col md="9">
               <p class="font-weight-bold CocolorDark-text">10/04/2019</p>
               <div class="d-flex justify-content-between">
-                <mdb-col col="11" class="text-truncate pl-0 mb-3">
+                <mdb-col col="11" class="pl-0 mb-3">
                   <p class="dark-grey-text">Cooper hopes to one day become a zebra. Maybe one day buddy.</p>
                 </mdb-col>
                 <a>
@@ -327,7 +327,7 @@
             <mdb-col md="9">
               <p class="font-weight-bold CocolorDark-text">10/04/2019</p>
               <div class="d-flex justify-content-between">
-                <mdb-col col="11" class="text-truncate pl-0 mb-3">
+                <mdb-col col="11" class="pl-0 mb-3">
                   <p class="dark-grey-text">A true princess, worthy of the throne. Just don't let that spider get ya! </p>
                 </mdb-col>
                 <a>
@@ -350,7 +350,7 @@
             <mdb-col md="9">
               <p class="font-weight-bold CocolorDark-text">10/04/2019</p>
               <div class="d-flex justify-content-between">
-                <mdb-col col="11" class="text-truncate pl-0 mb-3">
+                <mdb-col col="11" class="pl-0 mb-3">
                   <p class="dark-grey-text">This little Marley can defintely pass as a pumpkin. Precious!</p>
                 </mdb-col>
                 <a>
