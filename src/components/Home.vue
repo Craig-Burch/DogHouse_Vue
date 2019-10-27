@@ -2,14 +2,12 @@
   <div>
    <div class="heroBackground">
         <mdb-container class="d-flex justify-content-center align-items-center">
-          <mdb-row class="mt-5 pt-5 mb-0">
-
-            <mdb-col md="6" class="text-center animated fadeInLeft">
-              <img class="img-fluid mb-5 mt-5" :src="headerLogo" style="max-height: 350px;">
+          <mdb-row class="mt-5 pt-1 mb-5">
+            <mdb-col md="12" class="text-center animated fadeInLeft">
+              <img class="img-fluid mt-5" :src="headerLogo" style="max-height: 300px;">
             </mdb-col>
-
-            <mdb-col md="6" class="text-center animated fadeInRight mt-5">
-             <div class="vertical-align-custom">
+            <mdb-col md="12" class="text-center animated fadeInRight">
+            <!--  <div class="vertical-align-custom"> -->
               <h3 class="h1-reponsive font-weight-bold CocolorDark-text">
                 <strong>Your Dog Will Love Us, We Shih Tzu Not.</strong>
               </h3>
@@ -17,7 +15,6 @@
               <router-link to="/Gallery">
                 <mdb-btn class="CocolorBtnsDarkOutline" rounded style="font-size: 16px !important">View Gallery</mdb-btn>
               </router-link>
-              <!-- <router-link to="/Services"> -->
                 <mdb-btn  
                    class="CocolorBtnsDarkOutline" 
                    rounded 
@@ -25,13 +22,12 @@
                    v-on:click="scroll()">
                     Services
                 </mdb-btn>
-              <!-- </router-link> -->
-            </div>
+            <!-- </div> -->
             </mdb-col>
           </mdb-row>
         </mdb-container>
         <mdb-container>
-     <section class="my-4 mt-5 mb-5">
+     <section class="my-4 mt-3 mb-5">
        <mdb-row style="">
         <mdb-col md="12" class="md-0 mb-5">
           <mdb-row>
@@ -43,32 +39,17 @@
        </mdb-row>
      </section>
    </mdb-container>
-    </div>
-
+  </div>
 <main>
-  
-   <!-- Projects section v.3 -->
-<section  class="my-5">
+<section  class="my-4">
   <mdb-container>
-  <!-- Section heading -->
   <h2 class="h1-responsive font-weight-bold text-center my-5 CocolorDark-text">Only The Best For Your Pets</h2>
-  <!-- Section description -->
   <p class="black-text text-center w-responsive mx-auto mb-5">Thank you for dropping by! We are excited to show you what we are all about! If you have any questions feel free to ask. You can find more info about us here as well as our galleries of past clientel. Enjoy!</p>
-
-  <!-- Grid row -->
   <div class="row">
-
-    <!-- Grid column -->
     <div class="col-lg-5 mb-lg-0 mb-5">
-      <!--Image-->
-      <img src="https://scontent.fmia1-1.fna.fbcdn.net/v/t1.0-9/71477214_1263887267115690_3033714578610454528_n.jpg?_nc_cat=101&_nc_oc=AQlijUUI_vgYRuzc0P_LsP_9qXJgtozphOlwT-FDOXhxAQCyZ7qkP3F9QOl_x06clTqwtfYiScbpSuAREDIa8dGa&_nc_ht=scontent.fmia1-1.fna&oh=dc63dc3713fe6dd0161e657b0fe25639&oe=5E27CF4B" alt="Sample project image" class="img-fluid rounded z-depth-3">
+      <img :src="team" alt="Salon" class="img-fluid rounded z-depth-3">
     </div>
-    <!-- Grid column -->
-
-    <!-- Grid column -->
     <div class="col-lg-7">
-
-      <!-- Grid row -->
       <div class="row mb-3">
         <!-- <div class="col-md-1 col-2">
           <i class="fas fa-book-open fa-2x CocolorLight-text"></i>
@@ -78,9 +59,6 @@
           <p class="black-text">All dog grooming appointments include a Bath with premium shampoo and conditioner, nails ground, ears cleaned, brush out and haircut. </p>
         </div>
       </div>
-      <!-- Grid row -->
-
-      <!-- Grid row -->
       <div class="row mb-3">
         <!-- <div class="col-md-1 col-2">
           <i class="fas fa-book-open fa-2x CocolorLight-text"></i>
@@ -90,44 +68,23 @@
           <p class="black-text">At The Dog House, we are knowledgable in a variety of products to help your pet feel it's best and with the services we offer they'll look their best too! </p>
         </div>
       </div>
-      <!-- Grid row -->
-
-     
-
-      <!-- Grid row -->
       <div class="row">
         <!-- <div class="col-md-1 col-2">
           <i class="fas fa-book-open fa-2x CocolorLight-text"></i>
         </div> -->
         <div class="col-md-12 col-12">
           <h5 class="font-weight-bold mb-3 CocolorDark-text">Photos</h5>
-          <p class="black-text mb-0">Once we have completed your pet's grooming appointment we offer a cute dress up photograpy session for them! </p>
+          <p class="black-text mb-0">Once we have completed your pet's grooming appointment we offer photos of them fresh and squeaky clean. We even do dress up shoots on special occasions! We post daily to our Facebook account. </p>
         </div>
       </div>
-      <!-- Grid row -->
-
     </div>
-    <!-- Grid column -->
-
   </div>
-  <!-- Grid row -->
-
-  <hr class="my-5">
-
-  <!-- Grid row -->
+ <hr class="my-5">
   <div class="row">
-
-    <!-- Grid column -->
       <div class="col-lg-5 mb-lg-0 mb-5 displayforMobile">
-        <!--Image-->
-         <img src="https://scontent.fmia1-1.fna.fbcdn.net/v/t1.0-9/71278277_1262950223876061_4305793074602180608_o.jpg?_nc_cat=106&_nc_oc=AQlgPOChPNcNQ9io7xntFKh7CJ40I6FhJK7Fle_OkzjBWWfEJM4KdDXqVFdbbbdXMz2DNUU7Ik8ty8TtF5r-q65c&_nc_ht=scontent.fmia1-1.fna&oh=ae1ba78df4cdd9ec654a1f0707aea629&oe=5E2531C7" class="img-fluid rounded z-depth-3">
+         <img :src="shop22" alt="Salon" class="img-fluid rounded z-depth-3">
       </div>
-    <!-- Grid column -->
-
-    <!-- Grid column -->
     <div class="col-lg-7">
-
-      <!-- Grid row -->
       <div class="row mb-3">
         <!-- <div class="col-md-1 col-2">
           <i class="fas fa-book-open fa-2x CocolorLight-text"></i>
@@ -137,9 +94,6 @@
           <p class="black-text">Thorough and detailed, we offer top notch grooming services for your pets.</p>
         </div>
       </div>
-      <!-- Grid row -->
-
-      <!-- Grid row -->
       <div class="row mb-3">
         <!-- <div class="col-md-1 col-2">
           <i class="fas fa-book-open fa-2x CocolorLight-text"></i>
@@ -149,9 +103,6 @@
           <p class="black-text">We offer a relaxed environment and professional groomers to cater to you and you pet's needs. Come visit us at The Dog House and say hello!</p>
         </div>
       </div>
-      <!-- Grid row -->
-
-      <!-- Grid row -->
       <div class="row mb-lg-0 mb-5">
         <!-- <div class="col-md-1 col-2">
           <i class="fas fa-book-open fa-2x CocolorLight-text"></i>
@@ -161,24 +112,13 @@
           <p class="black-text mb-0">If you have any questions, feel free to reach us through our contact form or phone number below.</p>
         </div>
       </div>
-      <!-- Grid row -->
-
     </div>
-    <!-- Grid column -->
-
-    <!-- Grid column -->
     <div class="col-lg-5 displayforDesktop">
-      <!--Image-->
-      <img src="https://scontent.fmia1-1.fna.fbcdn.net/v/t1.0-9/71278277_1262950223876061_4305793074602180608_o.jpg?_nc_cat=106&_nc_oc=AQlgPOChPNcNQ9io7xntFKh7CJ40I6FhJK7Fle_OkzjBWWfEJM4KdDXqVFdbbbdXMz2DNUU7Ik8ty8TtF5r-q65c&_nc_ht=scontent.fmia1-1.fna&oh=ae1ba78df4cdd9ec654a1f0707aea629&oe=5E2531C7" class="img-fluid rounded z-depth-3">
+      <img :src="shop22" alt="Salon" class="img-fluid rounded z-depth-3">
     </div>
-    <!-- Grid column -->
-
   </div>
-  <!-- Grid row -->
 </mdb-container>
 </section>
-<!-- Projects section v.3 -->
-
    <section style="">
     <mdb-container>
      <section class="my-5 pt-2">
@@ -194,8 +134,6 @@
      </section>
    </mdb-container>
   </section>
-
-
   <section class="hideMobileEXTRAtext" style="background-color: #F4F5F7;">
     <mdb-container>
     <section class="my-5 pt-2 pb-1">
@@ -223,7 +161,7 @@
             </mdb-col>
             <mdb-col lg="10" md="9" size="10">
               <h4 class="font-weight-bold CocolorDark-text">Safety First</h4>
-              <p>We pride ourselves in taking extremely good care of your pets. Training our staff on proper procedures keeps not just your furry friends safe but also calm and relaxed in a new enviormnemt.</p>
+              <p>We pride ourselves in taking extremely good care of your pets. Training our staff on proper procedures keeps not just your furry friends safe but also calm and relaxed in a new enviornmemt.</p>
               <!-- <router-link to="/Services">
                 <mdb-btn class="CocolorDark" size="md">Learn more</mdb-btn>
               </router-link> -->
@@ -248,9 +186,6 @@
     </section>
   </mdb-container>
  </section>
-
- 
-
   <mdb-container>
     <mdb-row>
       <mdb-col md="12" lg="12">
@@ -264,7 +199,7 @@
           <h3 class="font-weight-bold CocolorDark-text mb-3 p-0">
             <a>Take A Peak!</a>
           </h3>
-          <p class="dark-grey-text mb-lg-0 mb-md-5 mb-4">We love each and every animal that comes through our doors and are so grateful for all of our wonderful clients and their pets. To celebrate the occasion we do it right, with photos that will last a lifetime.</p>
+          <p class="dark-grey-text mb-lg-0 mb-md-5 mb-4">We love each and every animal that comes through our doors and are so grateful for all of our wonderful clients and their pets. To celebrate special occasions we do it right, with photos that will last a lifetime.</p>
         </div>
       </mdb-col>
       <mdb-col md="12" lg="12">
@@ -426,7 +361,7 @@
         </mdb-col>
         <mdb-col lg="7">
           <div id="map-container" class="rounded z-depth-1-half map-container" >
-            <img class="contactPicDesktop" src="https://images.pexels.com/photos/2055231/pexels-photo-2055231.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="100%" height="100%" frameBorder="0" style="border: 0">
+            <img class="contactPic" :src="dog" alt="Contact Us" width="100%" height="100%" frameBorder="0" style="border: 0">
           </div>
           <br/>
           <mdb-row class="text-center">
@@ -450,7 +385,6 @@
     </main>
   </div>
 </template>
-
 <script>
 import axios from "axios";
 import { mdbContainer, mdbNavbar, mdbNavbarBrand, mdbNavbarToggler, mdbNavbarNav, mdbNavItem, mdbInput, mdbBadge, mdbIcon, mdbMask, mdbRow, mdbCol, mdbBtn, mdbTextarea, mdbCard, mdbCardBody, mdbView } from 'mdbvue';
@@ -479,7 +413,11 @@ export default {
   data () {
     return {
       headerLogo: '../static/dh-logo-hero2.png',
+      shop2:'../static/shop2.png',
+      shop22:'../static/shop22.png',
+      team:'../static/team.png',
       houses: '../static/runner.png',
+      dog: '../static/contactDog.png',
       data: []
     };
   },
@@ -586,6 +524,9 @@ p {
   background-repeat: no-repeat; 
   background-size: cover; 
   background-position: center center;
+}
+.contactPic {
+  border-radius: 5px;
 }
 @media only screen and (max-width: 991px) {
  .displayforMobile {

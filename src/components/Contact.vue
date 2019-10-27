@@ -1,8 +1,8 @@
 <template>
   <section style="background-color: #fff;" class="mb-0" >
   <mdb-container>
-    <section class="pb-5 pt-2">
-      <h2 class="h1-responsive font-weight-bold text-center my-5 CocolorDark-text">Contact us</h2>
+    <section class="pb-5 pt-5">
+      <h2 class="h1-responsive font-weight-bold text-center my-4 CocolorDark-text">Contact us</h2>
       <p class="text-center w-responsive mx-auto pb-5">Please feel free to contact us via our contact form, phone number or email. We look forward to hearing from you and finding out what we can do for you.</p>
       <mdb-row>
         <mdb-col lg="5" class="lg-0 mb-4">
@@ -62,7 +62,7 @@
         </mdb-col>
         <mdb-col lg="7">
           <div id="map-container" class="rounded z-depth-1-half map-container">
-            <img src="https://images.pexels.com/photos/2055231/pexels-photo-2055231.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="100%" height="100%" frameBorder="0" style="border: 0">
+            <img class="contactPic" :src="dog" alt="Contact Us" width="100%" height="100%" frameBorder="0" style="border: 0">
           </div>
           <br/>
            <mdb-row class="text-center">
@@ -117,7 +117,8 @@ export default {
   },
   data () {
     return {
-      data: []
+      data: [],
+      dog: '../static/contactDog.png'
     };
   },
   methods: {
@@ -179,9 +180,6 @@ p {
 .CocolorLight {
   background-color: #A0D8D5 !important;
 }
-.CocolorOrangeBG {
-  background-color: #F97F2F !important;
-}
 .CocolorOrange-text {
   color: #F97F2F;
 }
@@ -196,14 +194,7 @@ p {
 .CocolorLight-text {
   color: #A0D8D5;
 }
-.galleryLinks {
-  border-bottom: 1px solid #e0e0e0;
-  margin-bottom: 1.5rem;
-}
-.vertical-align-custom {
-  margin-top: 18%;
-}
-.houses {
-  background-color: #F4F5F7 !important;
+.contactPic {
+  border-radius: 5px;
 }
 </style>
