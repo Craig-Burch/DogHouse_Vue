@@ -11,17 +11,18 @@
               <h3 class="h1-reponsive font-weight-bold CocolorDark-text">
                 <strong>Your Dog Will Love Us, We Shih Tzu Not.</strong>
               </h3>
-              <h5 class=" pb-md-2 pb-sm-3 pb-5 white-text"> The Dog House is open for business on West Ridge Pike in Limerick, PA. We are dedicated to making sure that your pet's grooming experience is stress-free and pleasant. </h5>
+              <h5 class=" pb-md-2 pb-sm-3 pb-5 white-text"> The Dog House is open for business on West Ridge Pike in Limerick, PA. <br class="hideForMobile">We are dedicated to making sure that your pet's grooming experience is stress-free and pleasant. </h5>
               <router-link to="/Gallery">
                 <mdb-btn class="CocolorBtnsDarkOutline" rounded style="font-size: 16px !important">View Gallery</mdb-btn>
               </router-link>
+             <a href="#" v-scroll-to="'#services'">
                 <mdb-btn  
                    class="CocolorBtnsDarkOutline" 
                    rounded 
-                   style="font-size: 16px !important"
-                   v-on:click="scroll()">
+                   style="font-size: 16px !important">
                     Services
                 </mdb-btn>
+              </a>
             <!-- </div> -->
             </mdb-col>
           </mdb-row>
@@ -32,7 +33,7 @@
         <mdb-col md="12" class="md-0 mb-5">
           <mdb-row>
             <mdb-col lg="12" md="9" size="10">
-               <img id="scrollToservices" :src="houses" class="img-fluid" style="margin-top: 30px">
+               <img id="services" :src="houses" class="img-fluid" style="margin-top: 30px">
             </mdb-col>
           </mdb-row>
         </mdb-col>
@@ -41,7 +42,7 @@
    </mdb-container>
   </div>
 <main>
-<section  class="my-4">
+<section class="my-4">
   <mdb-container>
   <h2 class="h1-responsive font-weight-bold text-center my-5 CocolorDark-text">Only The Best For Your Pets</h2>
   <p class="black-text text-center w-responsive mx-auto mb-5">Thank you for dropping by! We are excited to show you what we are all about! If you have any questions feel free to ask. You can find more info about us here as well as our galleries of past clientel. Enjoy!</p>
@@ -191,14 +192,16 @@
       <mdb-col md="12" lg="12">
         <div class="mb-4">
           <div class="d-flex justify-content-between">
-            <a class="">
+            <router-link to="/Gallery">
               <h6 class="font-weight-bold CocolorDark-text">
                 Gallery</h6>
-            </a>
+             </router-link>
           </div>
+          <router-link to="/Gallery">
           <h3 class="font-weight-bold CocolorDark-text mb-3 p-0">
             <a>Take A Peak!</a>
           </h3>
+          </router-link>
           <p class="dark-grey-text mb-lg-0 mb-md-5 mb-4">We love each and every animal that comes through our doors and are so grateful for all of our wonderful clients and their pets. To celebrate special occasions we do it right, with photos that will last a lifetime.</p>
         </div>
       </mdb-col>
@@ -207,17 +210,17 @@
           <mdb-row>
             <mdb-col md="3">
               <mdb-view hover rounded class="z-depth-1-half mb-4">
-                <img class="img-fluid" src="https://scontent.fmia1-1.fna.fbcdn.net/v/t1.0-9/71283091_1263890887115328_7259019678322786304_n.jpg?_nc_cat=101&_nc_oc=AQl3Vn2Fl7YMBl1FuOmPkoh7S3bROsvFc4xshO13-GQIkvvgyWBAEC5AoLYeNDW2uMlNvVqdLjp6ULCe8YPYi0Ye&_nc_ht=scontent.fmia1-1.fna&oh=68b6531ec3b5e2cae1ec0d29c75d6a35&oe=5E2EC5A6" alt="Sample image" />
+                <img class="img-fluid" :src="gallery1" >
                 <router-link to="/Gallery">
                   <mdb-mask overlay="white-slight" class="waves-light" />
                 </router-link>
               </mdb-view>
             </mdb-col>
             <mdb-col md="9">
-              <p class="font-weight-bold CocolorDark-text">10/04/2019</p>
+              <p class="font-weight-bold CocolorDark-text">02/08/2020</p>
               <div class="d-flex justify-content-between">
                 <mdb-col col="11" class=" pl-0 mb-3">
-                  <p class="dark-grey-text">Well would you look at that, I think we found one of those trolls. Happy Halloween!</p>
+                  <p class="dark-grey-text">Who wouldn't want a kiss from this cute pup. Hapy Valentines Day!</p>
                 </mdb-col>
                 <a>
                   <!-- <mdb-icon icon="angle-double-right" /> -->
@@ -230,17 +233,17 @@
           <mdb-row>
             <mdb-col md="3">
               <mdb-view hover rounded class="z-depth-1-half mb-4">
-                <img class="img-fluid" src="https://scontent.fmia1-1.fna.fbcdn.net/v/t1.0-9/72636930_1263890010448749_8687228511926091776_n.jpg?_nc_cat=107&_nc_oc=AQmuVoNsmvP32nKMT0KJadfIUbE2TBvM2lDOfOwI1g9RWumTaK4DR9MG4cxiWAHGu325qFp_QiqFN_WWuXqnkhL9&_nc_ht=scontent.fmia1-1.fna&oh=d47d2f37cf750ba75d9602a603c538bd&oe=5E370012" alt="Sample image" />
+                <img class="img-fluid" :src="gallery2" >
                 <router-link to="/Gallery">
                   <mdb-mask overlay="white-slight" class="waves-light" />
                 </router-link>
               </mdb-view>
             </mdb-col>
             <mdb-col md="9">
-              <p class="font-weight-bold CocolorDark-text">10/04/2019</p>
+              <p class="font-weight-bold CocolorDark-text">02/08/2020</p>
               <div class="d-flex justify-content-between">
                 <mdb-col col="11" class="pl-0 mb-3">
-                  <p class="dark-grey-text">Cooper hopes to one day become a zebra. Maybe one day buddy.</p>
+                  <p class="dark-grey-text">Such style, such confidence, where did you get the shades, Bo? Pick us up a pair next time.</p>
                 </mdb-col>
                 <a>
                   <!-- <mdb-icon icon="angle-double-right" /> -->
@@ -253,17 +256,109 @@
           <mdb-row>
             <mdb-col md="3">
               <mdb-view hover rounded class="z-depth-1-half mb-4">
-                <img class="img-fluid" src="https://scontent.fmia1-2.fna.fbcdn.net/v/t1.0-9/72472939_1263890587115358_7002855506528174080_n.jpg?_nc_cat=111&_nc_oc=AQlFvYtOzlijaVMkieUTFOLwJrndQUiQ6pB6u2ZHbJ8glMS641UHEBnradMn5cmazAOw7iU_1io1Hs_RVrMdPJsh&_nc_ht=scontent.fmia1-2.fna&oh=e97e18368aa0496a4578b000a0d2d341&oe=5E3ADD38" alt="Sample image" />
+                <img class="img-fluid" :src="gallery3" >
                 <router-link to="/Gallery">
                   <mdb-mask overlay="white-slight" class="waves-light" />
                 </router-link>
               </mdb-view>
             </mdb-col>
             <mdb-col md="9">
-              <p class="font-weight-bold CocolorDark-text">10/04/2019</p>
+              <p class="font-weight-bold CocolorDark-text">02/08/2020</p>
               <div class="d-flex justify-content-between">
                 <mdb-col col="11" class="pl-0 mb-3">
-                  <p class="dark-grey-text">A true princess, worthy of the throne. Just don't let that spider get ya! </p>
+                  <p class="dark-grey-text">Yes, Junior, we will all be your valentine!</p>
+                </mdb-col>
+                <a>
+                  <!-- <mdb-icon icon="angle-double-right" /> -->
+                </a>
+              </div>
+            </mdb-col>
+          </mdb-row>
+        </div>
+        <div class="galleryLinks">
+          <mdb-row>
+            <mdb-col md="3">
+              <mdb-view hover rounded class="z-depth-1-half mb-4">
+                <img class="img-fluid" :src="gallery4" >
+                <router-link to="/Gallery">
+                  <mdb-mask overlay="white-slight" class="waves-light" />
+                </router-link>
+              </mdb-view>
+            </mdb-col>
+            <mdb-col md="9">
+              <p class="font-weight-bold CocolorDark-text">02/08/2020</p>
+              <div class="d-flex justify-content-between">
+                <mdb-col col="11" class="pl-0 mb-3">
+                  <p class="dark-grey-text">Single and ready to mingle. </p>
+                </mdb-col>
+                <a>
+                  <!-- <mdb-icon icon="angle-double-right" /> -->
+                </a>
+              </div>
+            </mdb-col>
+          </mdb-row>
+        </div>
+        <div class="galleryLinks">
+          <mdb-row>
+            <mdb-col md="3">
+              <mdb-view hover rounded class="z-depth-1-half mb-4">
+                <img class="img-fluid" :src="gallery5" >
+                <router-link to="/Gallery">
+                  <mdb-mask overlay="white-slight" class="waves-light" />
+                </router-link>
+              </mdb-view>
+            </mdb-col>
+            <mdb-col md="9">
+              <p class="font-weight-bold CocolorDark-text">02/08/2020</p>
+              <div class="d-flex justify-content-between">
+                <mdb-col col="11" class="pl-0 mb-3">
+                  <p class="dark-grey-text">Harley just has that smug look about him because he knows Bo and her have some rockin' glasses. </p>
+                </mdb-col>
+                <a>
+                  <!-- <mdb-icon icon="angle-double-right" /> -->
+                </a>
+              </div>
+            </mdb-col>
+          </mdb-row>
+        </div>
+        <div class="galleryLinks">
+          <mdb-row>
+            <mdb-col md="3">
+              <mdb-view hover rounded class="z-depth-1-half mb-4">
+                <img class="img-fluid" :src="gallery6" >
+                <router-link to="/Gallery">
+                  <mdb-mask overlay="white-slight" class="waves-light" />
+                </router-link>
+              </mdb-view>
+            </mdb-col>
+            <mdb-col md="9">
+              <p class="font-weight-bold CocolorDark-text">02/08/2020</p>
+              <div class="d-flex justify-content-between">
+                <mdb-col col="11" class="pl-0 mb-3">
+                  <p class="dark-grey-text">Wow, Willow! Talk about a beauty queen! </p>
+                </mdb-col>
+                <a>
+                  <!-- <mdb-icon icon="angle-double-right" /> -->
+                </a>
+              </div>
+            </mdb-col>
+          </mdb-row>
+        </div>
+        <div class="galleryLinks">
+          <mdb-row>
+            <mdb-col md="3">
+              <mdb-view hover rounded class="z-depth-1-half mb-4">
+                <img class="img-fluid" :src="gallery7" >
+                <router-link to="/Gallery">
+                  <mdb-mask overlay="white-slight" class="waves-light" />
+                </router-link>
+              </mdb-view>
+            </mdb-col>
+            <mdb-col md="9">
+              <p class="font-weight-bold CocolorDark-text">02/08/2020</p>
+              <div class="d-flex justify-content-between">
+                <mdb-col col="11" class="pl-0 mb-3">
+                  <p class="dark-grey-text">Luigi is out here knowing he looks good!  </p>
                 </mdb-col>
                 <a>
                   <!-- <mdb-icon icon="angle-double-right" /> -->
@@ -276,17 +371,17 @@
           <mdb-row>
             <mdb-col md="3">
               <mdb-view hover rounded class="z-depth-1-half mb-4">
-                <img class="img-fluid" src="https://scontent.fmia1-1.fna.fbcdn.net/v/t1.0-9/72399465_1263886260449124_8454555380289110016_n.jpg?_nc_cat=107&_nc_oc=AQlG2_smt20_Z6KRyNCZ7MHNf68yvvCNaz8nI3L8T_mB60FMyov-R-hb2bltG-N23eNwus364uxaH-X-SbFFidmw&_nc_ht=scontent.fmia1-1.fna&oh=092849d0903e4d881c972ebf103190f4&oe=5E2C2F6E" alt="Sample image" />
+                <img class="img-fluid" :src="gallery8" >
                 <router-link to="/Gallery">
                   <mdb-mask overlay="white-slight" class="waves-light" />
                 </router-link>
               </mdb-view>
             </mdb-col>
             <mdb-col md="9">
-              <p class="font-weight-bold CocolorDark-text">10/04/2019</p>
+              <p class="font-weight-bold CocolorDark-text">02/08/2020</p>
               <div class="d-flex justify-content-between">
                 <mdb-col col="11" class="pl-0 mb-3">
-                  <p class="dark-grey-text">This little Marley can defintely pass as a pumpkin. Precious!</p>
+                  <p class="dark-grey-text">Precious! Thank you for stopping by, Benji! Happy Valentines Day!</p>
                 </mdb-col>
                 <a>
                   <!-- <mdb-icon icon="angle-double-right" /> -->
@@ -418,17 +513,18 @@ export default {
       team:'../static/team.png',
       houses: '../static/runner.png',
       dog: '../static/contactDog.png',
+      gallery1: '../static/1.jpg',
+      gallery2: '../static/2.jpg',
+      gallery3: '../static/3.jpg',
+      gallery4: '../static/4.png',
+      gallery5: '../static/5.jpg',
+      gallery6: '../static/6.jpg',
+      gallery7: '../static/7.jpg',
+      gallery8: '../static/8.jpg',
       data: []
     };
   },
   methods: {
-    scroll() {
-      document.getElementById('scrollToservices').scrollIntoView(
-        { behavior: "smooth", 
-          block: "start", 
-          inline: "nearest"
-        });
-    },
     handleSubmit () {
       let formValues = [];
         const inputs = document.querySelectorAll(".doghouse-contactForm input");
@@ -577,6 +673,11 @@ p {
 @media only screen and (max-width: 340px) {
 .vertical-align-custom {
     margin-top: -25%;
+  }
+}
+@media only screen and (max-width: 800px) {
+.hideForMobile {
+   display: none;
   }
 }
 </style>
