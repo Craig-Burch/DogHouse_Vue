@@ -547,7 +547,7 @@ export default {
           }
           else {
             axios 
-            .post("http://doghousecontact.us-east-1.elasticbeanstalk.com/mailer", formValues)
+            .post("http://doghousecontact2-env.us-east-1.elasticbeanstalk.com/mailer", formValues)
             .then(response => {       
               console.log(response);     
             })
